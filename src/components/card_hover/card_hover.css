@@ -1,0 +1,8 @@
+.hover-container {
+    max-width: 80rem; /* Equivalent to max-w-5xl */
+    margin-left: auto; /* Equivalent to mx-auto */
+    margin-right: auto; /* Equivalent to mx-auto */
+    padding-left: 2rem; /* Equivalent to px-8 */
+    padding-right: 2rem; /* Equivalent to px-8 */
+  }
+  

@@ -1,0 +1,46 @@
+.form {
+  max-width: 28rem;
+  /* Equivalent to max-w-md */
+  width: 100%;
+  /* Equivalent to w-full */
+  margin-left: auto;
+  /* Equivalent to mx-auto */
+  margin-right: auto;
+  /* Equivalent to mx-auto */
+  border-radius: 0;
+  /* Equivalent to rounded-none */
+  border-color: #000;
+  border-width: 1px;
+  padding: 1rem;
+  /* Equivalent to p-4 */
+  box-shadow: 1px 1px 1px 1px #00000040;
+  /* Equivalent to shadow-input */
+  background-color: #fff;
+  /* Equivalent to bg-white */
+}
+@media (min-width: 768px) {
+  .form {
+    border-radius: 1rem;
+    /* Equivalent to md:rounded-2xl */
+    padding: 2rem;
+    /* Equivalent to md:p-8 */
+  }
+}
+.dark .form {
+  background-color: #000;
+  /* Equivalent to dark:bg-black */
+}
+
+.custom-title {
+  font-weight: 700;
+  /* Equivalent to font-bold */
+  font-size: 1.25rem;
+  /* Equivalent to text-xl */
+  color: #333;
+  /* Equivalent to text-neutral-800 */
+}
+
+.dark-mode .custom-title {
+  color: #eee;
+  /* Equivalent to dark:text-neutral-200 */
+}

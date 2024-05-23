@@ -1,0 +1,42 @@
+
+
+.container {
+  display: flex; /* Use flexbox to arrange divs side by side */
+  width: 100%;
+  height: auto;
+  padding: 0;
+  @media only screen and (max-width: 768px) {
+    display: inline-block;
+  }
+}
+
+.leftDiv, .rightDiv {
+   /* Each div takes up equal space */
+   /* Add padding for spacing */
+}
+
+.leftDiv {
+  flex: 3;
+  padding-left: 10px;
+  @media only screen and (max-width: 768px) {
+    /* height: 10rem; */
+    padding: 0px;
+    width: 100%;
+    height: auto;
+    border: 0px;
+  }
+  
+}
+
+.rightDiv {
+  flex: 1;
+  @media only screen and (max-width: 768px) {
+    /* height: 10rem; */
+  padding: 0px;
+  width: 100%;
+  height: auto;
+  border: 0px;
+  }
+   /* Style right div */
+  
+}

@@ -1,0 +1,26 @@
+
+
+.container {
+  display: flex; /* Use flexbox to arrange divs side by side */
+  width: 100rem;
+  @media only screen and (max-width: 768px) {
+    display: inline-block;
+}
+}
+
+.leftDiv, .rightDiv {
+   /* Each div takes up equal space */
+  padding: 0px; /* Add padding for spacing */
+}
+
+.leftDiv {
+  flex: 1;
+  
+}
+
+.rightDiv {
+  flex: 1;
+   /* Style right div */
+  
+}
+

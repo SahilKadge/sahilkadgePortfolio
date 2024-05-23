@@ -1,0 +1,8 @@
+.earth-canvas{
+    height: 800px;
+    @media only screen and (max-width: 768px) {
+        
+        width: auto;
+        height: 400px;
+    }
+}
