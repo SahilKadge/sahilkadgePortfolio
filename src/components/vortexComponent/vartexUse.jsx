@@ -4,7 +4,7 @@ import { Vortex } from "../ui/vortex";
 export function VortexDemo() {
     const downloadPDF = () => {
         // Replace 'path/to/your/resume.pdf' with the actual path to your PDF file
-        const resumePath = '../../../public/sahil_kadge_resume_new.pdf';
+        const resumePath = 'https://drive.google.com/file/d/1CFwwf9kB-WMQ_msKJAaPeAX2ImoaXp2j/view?usp=drive_link';
     
         // Create an anchor element
         const link = document.createElement('a');
@@ -25,10 +25,10 @@ export function VortexDemo() {
         document.body.removeChild(link);
       };
   return (
-    <div className="w-auto mx-auto rounded-md  h-[30rem] overflow-hidden">
+    <div className="w-full h-screen mx-auto rounded-md overflow-hidden">
       <Vortex
         backgroundColor="black"
-        className="flex items-center flex-col justify-center px-2 md:px-10 py-4 w-full h-full"
+        className="flex items-center flex-col justify-center px-2 md:px-10 w-full h-full"
       >
         <h2 className="text-white text-[3rem] md:text-6x1 font-bold text-center">
           Hi I am sahil

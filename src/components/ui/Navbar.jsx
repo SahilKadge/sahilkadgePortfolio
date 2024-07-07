@@ -13,10 +13,10 @@ const transition = {
 
 const MenuItem = ({ setActive, active, item, children }) => {
   return (
-    <div onMouseEnter={() => setActive(item)} className="relative">
+    <div onMouseEnter={() => setActive(item)} className="relative ">
       <motion.p
         transition={{ duration: 0.3 }}
-        className="cursor-pointer text-black hover:opacity-90 dark:text-white"
+        className="cursor-pointer hover:opacity-90 text-white"
       >
         {item}
       </motion.p>
@@ -31,7 +31,7 @@ const MenuItem = ({ setActive, active, item, children }) => {
               <motion.div
                 transition={transition}
                 layoutId="active" // layoutId ensures smooth animation
-                className="bg-white backdrop-blur-sm rounded-2xl overflow-hidden border border-black-20 dark:border-white-20 shadow-xl"
+                className="bg-transparent backdrop-blur-sm rounded-2xl overflow-hidden border border-black-20 dark:border-white-20 shadow-xl"
               >
                 <motion.div
                   layout // layout ensures smooth animation
@@ -59,7 +59,7 @@ const Menu = ({ setActive, children }) => {
   return (
     <nav
       onMouseLeave={() => setActive(null)} // resets the state
-      className="relative rounded-full border border-transparent dark:bg-black dark:border-white-20 bg-white shadow-input flex justify-center space-x-4 px-8 py-6"
+      className="relative rounded-full border border-transparent dark:bg-black dark:border-white-20 bg-transparent shadow-input flex justify-center space-x-4 px-8 py-6"
     >
       {children}
     </nav>
@@ -71,36 +71,37 @@ Menu.propTypes = {
   children: PropTypes.node.isRequired,
 };
 
-const ProductItem = ({ title, description, href, src }) => {
-  return (
+const ProductItem = ({ title, href }) => {
+  return href ? (
     <a href={href} className="flex space-x-2" target="_blank" rel="noopener noreferrer">
-      <img
-        src={src}
-        alt={title}
-        className="w-24 h-12 object-cover rounded-md shadow-2xl"
-      />
       <div>
-        <h4 className="text-xl font-bold mb-1 text-black dark:text-white">
+        <h4 className="font-bold mb-5 text-white">
           {title}
         </h4>
-        <p className="text-neutral-700 text-sm max-w-[10rem] dark:text-neutral-300">
-          {description}
-        </p>
       </div>
     </a>
+  ) : (
+    <div className="flex space-x-2">
+      <div>
+        <h4 className="font-bold mb-5 text-white">
+          {title}
+        </h4>
+      </div>
+    </div>
   );
 };
 
 ProductItem.propTypes = {
   title: PropTypes.string.isRequired,
-  description: PropTypes.string.isRequired,
-  href: PropTypes.string.isRequired,
-  src: PropTypes.string.isRequired,
+  href: PropTypes.string,
 };
+
+
+
 
 const HoveredLink = ({ children, ...rest }) => {
   return (
-    <a {...rest} className="text-neutral-700 dark:text-neutral-200 hover:text-black">
+    <a {...rest} className="text-neutral-200 hover:text-gray hover:cursor-pointer">
       {children}
     </a>
   );

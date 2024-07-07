@@ -7,103 +7,112 @@ export function HeroParallaxDemo() {
 }
 export const products = [
   {
-    title: "Basket ball shot prediction",
+    title: "Basket ball shot prediction_1",
     link: "https://github.com/SahilKadge/Basket-ball-shot-prediction.git",
     thumbnail:
-      "../../../public/Images/basketBall_github.png",
+      // "../../../public/Images/basketBall_github.png"
+      "https://i.postimg.cc/xCHfrfhW/basket-Ball-github.png",
   },
   {
-    title: "ASR For doctors",
+    title: "ASR For doctors_1",
     link: "https://github.com/SahilKadge/Fine-tune-whisper-model.git",
     thumbnail:
-      "../../../public/Images/ASR_web.png",
+      // "../../../public/Images/ASR_web.png"
+      "https://i.postimg.cc/wjfTLbDb/ASR-web.png",
   },
   {
-    title: "Basket ball shot prediction",
+    title: "Basket ball shot prediction_2",
     link: "https://github.com/SahilKadge/Basket-ball-shot-prediction.git",
     thumbnail:
-      "../../../public/Images/basketBall_github.png",
+      // "../../../public/Images/basketBall_github.png"
+      "https://i.postimg.cc/xCHfrfhW/basket-Ball-github.png",
   },
 
   {
-    title: "Dashboard",
+    title: "Dashboard_1",
     link: "https://admin-dashboard-for-societymanagement.netlify.app/",
     thumbnail:
-      "../../../public/Images/Dashboard_web.png",
+      // "../../../public/Images/Dashboard_web.png"
+      "https://i.postimg.cc/k5LJh61Q/Dashboard-web.png",
   },
   {
-    title: "Food 101",
+    title: "Food 101_1",
     link: "https://github.com/SahilKadge/Food-recognition-using-Tensorflow.git",
     thumbnail:
-      "../../../public/Images/Food101_github.png",
+      // "../../../public/Images/Food101_github.png"
+      "https://i.postimg.cc/bvZYTHTY/Food101-github.png",
   },
   {
-    title: "Food 101",
+    title: "Food 101_2",
     link: "https://github.com/SahilKadge/Food-recognition-using-Tensorflow.git",
     thumbnail:
-      "../../../public/Images/Food101_github.png",
+      // "../../../public/Images/Food101_github.png"
+      "https://i.postimg.cc/bvZYTHTY/Food101-github.png",
   },
 
   {
-    title: "Skimlit",
+    title: "Skimlit_1",
     link: "https://github.com/SahilKadge/skimlit.git",
     thumbnail:
-      "../../../public/Images/skimlit_github.png",
+      // "../../../public/Images/skimlit_github.png"
+      'https://i.postimg.cc/26B6zFb9/skimlit-github.png',
   },
   {
-    title: "Shopping website",
-    link: "https://crown-clothing-web.netlify.app",
+    title: "Shopping website_1",
+    link: "https://trendxshopping.netlify.app",
     thumbnail:
-      "../../../public/Images/shopping_web.png",
+      // "../../../public/Images/shopping_web.png"
+      "https://i.postimg.cc/YSP0Ky9m/shopping-web.png",
   },
   {
-    title: "Food 101",
+    title: "Food 101_3",
     link: "https://github.com/SahilKadge/Food-recognition-using-Tensorflow.git",
     thumbnail:
-      "../../../public/Images/Food101_github.png",
+      // "../../../public/Images/Food101_github.png"
+      "https://i.postimg.cc/bvZYTHTY/Food101-github.png",
   },
   {
-    title: "Basket Ball shot prediction",
+    title: "Basket Ball shot prediction_3",
     link: "https://github.com/SahilKadge/Basket-ball-shot-prediction.git",
     thumbnail:
-      "../../../public/Images/basketBall_github.png",
+      // "../../../public/Images/basketBall_github.png"
+      "https://i.postimg.cc/xCHfrfhW/basket-Ball-github.png",
   },
   {
-    title: "Shopping",
-    link: "https://crown-clothing-web.netlify.app",
+    title: "Trendx",
+    link: "https://trendxshopping.netlify.app/",
     thumbnail:
-      "../../../public/Images/shopping_web.png",
+      // "../../../public/Images/shopping_web.png"
+      "https://i.postimg.cc/YSP0Ky9m/shopping-web.png",
   },
 
   {
-    title: "Dashboard",
+    title: "Dashboard_2",
     link: "https://admin-dashboard-for-societymanagement.netlify.app/",
     thumbnail:
-      "../../../public/Images/Dashboard_web.png",
+      // "../../../public/Images/Dashboard_web.png"
+      "https://i.postimg.cc/k5LJh61Q/Dashboard-web.png",
   },
   {
-    title: "Asr for Doctors",
+    title: "Asr for Doctors_3",
     link: "https://github.com/SahilKadge/Fine-tune-whisper-model.git",
     thumbnail:
-      "../../../public/Images/ASR_web.png",
+      // "../../../public/Images/ASR_web.png"
+      "https://i.postimg.cc/wjfTLbDb/ASR-web.png",
   },
   {
-    title: "Basket Ball shot prediction",
+    title: "Basket Ball shot prediction_4",
     link: "https://github.com/SahilKadge/Basket-ball-shot-prediction.git",
     thumbnail:
-      "../../../public/Images/basketBall_github.png",
+      // "../../../public/Images/basketBall_github.png"
+      "https://i.postimg.cc/xCHfrfhW/basket-Ball-github.png",
   },
   {
-    title: "Shopping",
-    link: "https://crown-clothing-web.netlify.app",
+    title: "TrendX_2",
+    link: "https://trendxshopping.netlify.app",
     thumbnail:
-      "../../../public/Images/shopping_web.png",
-  },
-  {
-    title: "Asr for doctors ",
-    link: "https://github.com/SahilKadge/Fine-tune-whisper-model.git",
-    thumbnail:
-      "../../../public/Images/ASR_web.png",
+      // "../../../public/Images/shopping_web.png"
+      "https://i.postimg.cc/YSP0Ky9m/shopping-web.png",
   },
   
 ];

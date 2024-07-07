@@ -54,7 +54,7 @@ export function CardHoverEffectDemo() {
 
   return (
     <div className="sm:pt-1rem">
-    <h1 className=" mt-10 md:mt-0 text-2xl md:text-7xl text-center font-bold dark:text-white">
+    <h1 className=" mt-0 md:mt-0 text-2xl md:text-7xl text-center font-bold dark:text-white">
       MY SKILLS
     </h1>
     <div className="max-w-5xl mx-auto px-8">

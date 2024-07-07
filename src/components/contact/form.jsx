@@ -2,11 +2,12 @@ import { useState } from "react";
 import { Label } from "../ui/label";
 import { Input } from "../ui/input";
 import { cn } from "../../utils/cn";
-import {IconBrandGithub} from "@tabler/icons-react";
+import { IconBrandGithub } from "@tabler/icons-react";
 import { BrandLinkedin } from 'tabler-icons-react';
 import PropTypes from "prop-types";
 import emailjs from "@emailjs/browser";
 import './form.css'
+
 export const SignupFormDemo = () => {
   const [form, setForm] = useState({
     firstname: "",
@@ -17,7 +18,7 @@ export const SignupFormDemo = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    
+
     // Send form data to email backend
     try {
       const response = await emailjs.sendForm(
@@ -41,15 +42,15 @@ export const SignupFormDemo = () => {
       alert("Thank you. I will get back to you as soon as possible.");
     } catch (error) {
       console.error("Error sending email:", error);
-      
+
       // Display error message
       alert("Ahh, something went wrong. Please try again.");
     }
   };
 
   return (
-    <div className="form">
-      <h2 className="font-bold text-xl text-neutral-800 dark:text-neutral-200">
+    <div className="form max-w-md w-full mx-auto rounded-none md:rounded-2xl p-4 md:p-8 shadow-input dark:bg-black border border-gray-700">
+      <h2 className="font-bold text-xl dark:text-white">
         Write your message
       </h2>
       <form className="my-8" onSubmit={handleSubmit}>
@@ -90,8 +91,7 @@ export const SignupFormDemo = () => {
         </LabelInputContainer>
         <LabelInputContainerText className="mb-4">
           <Label htmlFor="message">Your Message</Label>
-          <textarea
-            id="message"
+          <Input
             name="message"
             value={form.message}
             onChange={(e) => setForm({ ...form, message: e.target.value })}
@@ -110,40 +110,35 @@ export const SignupFormDemo = () => {
 
         <div className="bg-gradient-to-r from-transparent via-neutral-300 dark:via-neutral-700 to-transparent my-8 h-[1px] w-full" />
 
-        
-      </form>
-      <div className="flex flex-col space-y-4">
+        <div className="flex flex-col space-y-4">
           <a href="https://github.com/SahilKadge">
-          <button
-            className=" relative group/btn flex space-x-2 items-center justify-start px-4 w-full text-black rounded-md h-10 font-medium shadow-input bg-gray-50 dark:bg-zinc-900 dark:shadow-[0px_0px_1px_1px_var(--neutral-800)]"
-            type=""
-          >
-            <IconBrandGithub className="h-4 w-4 text-neutral-800 dark:text-neutral-300" />
-            <span className="text-neutral-700 dark:text-neutral-300 text-sm">
-              GitHub
-            </span>
-            <BottomGradient />
-          </button>
+            <button className=" relative group/btn flex space-x-2 items-center justify-start px-4 w-full text-black rounded-md h-10 font-medium shadow-input bg-zinc-900 dark:shadow-[0px_0px_1px_1px_var(--neutral-800)]"
+            >
+              <IconBrandGithub className="h-4 w-4 text-neutral-300" />
+              <span className="text-neutral-300 text-sm">
+                GitHub
+              </span>
+              <BottomGradient />
+            </button>
           </a>
-  
+
           <a href="https://www.linkedin.com/in/sahil-kadge-7100332b8/">
-          <button
-            className=" relative group/btn flex space-x-2 items-center justify-start px-4 w-full text-black rounded-md h-10 font-medium shadow-input bg-gray-50 dark:bg-zinc-900 dark:shadow-[0px_0px_1px_1px_var(--neutral-800)]"
-            type=""
-          >
-            <BrandLinkedin className="h-4 w-4 text-neutral-800 dark:text-neutral-300" />
-            <span className="text-neutral-700 dark:text-neutral-300 text-sm">
-              Linkedin
-            </span>
-            <BottomGradient />
-          </button>
+            <button className=" relative group/btn flex space-x-2 items-center justify-start px-4 w-full text-black rounded-md h-10 font-medium shadow-input bg-zinc-900 dark:shadow-[0px_0px_1px_1px_var(--neutral-800)]"
+            >
+              <BrandLinkedin className="h-4 w-4 text-neutral-300" />
+              <span className="text-neutral-300 text-sm">
+                Linkedin
+              </span>
+              <BottomGradient />
+            </button>
           </a>
         </div>
+      </form>
     </div>
   );
 };
 
-export const BottomGradient = () => {
+const BottomGradient = () => {
   return (
     <>
       <span className="group-hover/btn:opacity-100 block transition duration-500 opacity-0 absolute h-px w-full -bottom-px inset-x-0 bg-gradient-to-r from-transparent via-cyan-500 to-transparent" />
@@ -152,10 +147,7 @@ export const BottomGradient = () => {
   );
 };
 
-export const LabelInputContainer = ({
-  children,
-  className,
-}) => {
+const LabelInputContainer = ({ children, className }) => {
   return (
     <div className={cn("flex flex-col space-y-2 w-full", className)}>
       {children}
@@ -163,22 +155,20 @@ export const LabelInputContainer = ({
   );
 };
 
-export const LabelInputContainerText = ({
-    children,
-    className,
-  }) => {
-    return (
-      <div className={cn("flex flex-col space-y-2 w-full", className)}>
-        {children}
-      </div>
-    );
+const LabelInputContainerText = ({ children, className }) => {
+  return (
+    <div className={cn("flex flex-col space-y-2 w-full", className)}>
+      {children}
+    </div>
+  );
 };
-  
+
 LabelInputContainer.propTypes = {
-    children: PropTypes.node.isRequired,
-    className: PropTypes.string,
+  children: PropTypes.node.isRequired,
+  className: PropTypes.string,
 };
+
 LabelInputContainerText.propTypes = {
-    children: PropTypes.node.isRequired,
-    className: PropTypes.string,
+  children: PropTypes.node.isRequired,
+  className: PropTypes.string,
 };
